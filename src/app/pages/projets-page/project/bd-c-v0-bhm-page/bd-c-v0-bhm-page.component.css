@@ -1,0 +1,21 @@
+:host {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+.table-w-label {
+    display: grid;
+    grid-template-columns: 1fr 2em 2fr;
+    grid-row-gap: 1.5em;
+    grid-column-gap: 1.5em;
+}
+
+.label-grid {
+    font-weight: 600;
+    text-align: end;
+}
+.logo-grid {
+    font-size: 1.5em;
+    text-align: center;
+}

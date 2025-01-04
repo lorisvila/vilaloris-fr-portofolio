@@ -1,0 +1,113 @@
+/*Import the Google Roboto Font*/
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Include material icons fonts */
+@font-face {
+  font-family: "icons";
+  src: url("/assets/fonts/icons/icons.eot?#iefix") format("embedded-opentype"),
+  url("/assets/fonts/icons/icons.woff2") format("woff2"),
+  url("/assets/fonts/icons/icons.woff") format("woff"),
+  url("/assets/fonts/icons/icons.ttf") format("truetype"),
+  url("/assets/fonts/icons/icons.svg#icons") format("svg");
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icons/MaterialSymbolsOutlined-VariableFont_FILL,GRAD,opsz,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons Outlined';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icons/MaterialSymbolsOutlined-VariableFont_FILL,GRAD,opsz,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons Two Tone';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icons/MaterialSymbolsOutlined-VariableFont_FILL,GRAD,opsz,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons Round';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icons/MaterialSymbolsRounded-VariableFont_FILL,GRAD,opsz,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Material Icons Sharp';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/icons/MaterialSymbolsSharp-VariableFont_FILL,GRAD,opsz,wght.ttf') format('truetype');
+}
+
+.rounded-image {
+  border-radius: 50%;
+}
+.code-text {
+  background-color: #e3e3e3;
+  border-radius: 0.2em;
+  padding: 0 0.3em;
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 0.90em;
+  font-style: normal;
+  word-wrap: break-word; /* Ensure long words wrap */
+  word-break: break-word; /* Prevent overflow */
+}
+
+.enhance-text {
+  background-color: #e3e3e3;
+  border-radius: 0.2em;
+  padding: 0.05em 0.3em;
+  font-weight: 500;
+}
+
+wcs-card:first-child > h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+// Global styles
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+.align-content-center {
+  align-content: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-items-center {
+  justify-items: center;
+}
+.gap-1em {
+  gap: 1em
+}
+.gap-2em {
+  gap: 1em
+}
+.gap-3em {
+  gap: 1em
+}
+.columnForm {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1em;
+}
+.rowForm {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+}
+.img-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

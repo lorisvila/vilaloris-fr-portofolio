@@ -1,0 +1,6 @@
+#section-one {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}

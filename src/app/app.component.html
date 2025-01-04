@@ -1,0 +1,26 @@
+<wcs-header>
+  <img slot="logo" src="/assets/images/me/photoProfil.jpg" alt="App logo" id="app-logo" class="rounded-image">
+  <h1 slot="title">VILA Loris - Portofolio</h1>
+  <div slot="actions">
+    <wcs-button routerLink="/Contact">Contact</wcs-button>
+  </div>
+</wcs-header>
+
+<wcs-nav>
+  <wcs-nav-item text="Accueil" routerLink="/Accueil" role="link" routerLinkActive="active">
+    <wcs-mat-icon icon="home"></wcs-mat-icon>
+  </wcs-nav-item>
+  <wcs-nav-item text="Projets" routerLink="/Projets" role="link" routerLinkActive="active">
+    <wcs-mat-icon icon="shelves"></wcs-mat-icon>
+  </wcs-nav-item>
+  <wcs-nav-item text="Parcours" routerLink="/Parcours" role="link" routerLinkActive="active">
+    <wcs-mat-icon icon="tactic"></wcs-mat-icon>
+  </wcs-nav-item>
+    <wcs-nav-item text="Passions" routerLink="/Passions" role="link" routerLinkActive="active">
+        <wcs-mat-icon icon="favorite"></wcs-mat-icon>
+    </wcs-nav-item>
+</wcs-nav>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
