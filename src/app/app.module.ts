@@ -14,8 +14,9 @@ import {FormlyModule} from "@ngx-formly/core";
 import {WcsFormlyModule} from "wcs-formly";
 import { BdCV0BhmPageComponent } from './pages/projets-page/project/bd-c-v0-bhm-page/bd-c-v0-bhm-page.component';
 import { ParcoursPageComponent } from './pages/parcours-page/parcours-page.component';
-import { Error404Component } from './pages/error-404/error-404.component';
+import { Error404Component } from './pages/errors/error-404/error-404.component';
 import { PassionsPageComponent } from './pages/passions-page/passions-page.component';
+import { ErrorDevComponent } from './pages/errors/error-dev/error-dev.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { PassionsPageComponent } from './pages/passions-page/passions-page.compo
     ParcoursPageComponent,
     Error404Component,
     PassionsPageComponent,
+    ErrorDevComponent,
   ],
   imports: [
     BrowserModule,
