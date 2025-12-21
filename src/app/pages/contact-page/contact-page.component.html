@@ -1,7 +1,7 @@
 <div class="flex-column justify-items-center">
-  <h1>Formulaire de contact</h1>
+  <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
   <form [formGroup]="form" class="columnForm">
     <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
-    <wcs-button type="submit">Envoyer</wcs-button>
+    <wcs-button type="submit">{{ 'CONTACT.SEND' | translate }}</wcs-button>
   </form>
 </div>

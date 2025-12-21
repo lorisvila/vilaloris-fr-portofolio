@@ -1,28 +1,34 @@
+<div class="projects-header">
+  <h1>{{ 'PROJECTS.TITLE' | translate }}</h1>
+  <p class="projects-intro">
+    {{ 'PROJECTS.INTRO' | translate }}
+  </p>
+</div>
 <wcs-card mode="flat">
   <wcs-card-body class="flex-row gap-2em">
-    <h3>Banc de configuration d'équipements réseaux S.DOT <span class="code-text">v0</span></h3>
-    <wcs-badge class="wcs-success">En production</wcs-badge>
+    <h3>{{ 'PROJECTS.PROJECT1.TITLE' | translate }} <span class="code-text">{{ 'PROJECTS.PROJECT1.VERSION' | translate }}</span></h3>
+    <wcs-badge class="wcs-success">{{ 'PROJECTS.STATUS_PROD' | translate }}</wcs-badge>
   </wcs-card-body>
   <wcs-divider></wcs-divider>
   <wcs-card-body class="project-content-container display-image-left">
     <div class="project-image-container">
       <img src="assets/images/projets/BdC/BancBHM.jpeg" class="img-shadow">
-        <span>Photo du banc prototype au <br>Technicentre Industriel de Bischheim</span>
+        <span>{{ 'PROJECTS.PROJECT1.IMG_CAPTION' | translate }}</span>
     </div>
     <div class="project-text-container">
-        <span class="label">️Contexte 🛠</span>
-        <span class="content">Projet de fin de BTS Maintenance des Systèmes au Technicentre Industriel de Bischheim</span>
-        <span class="label">Problématique ❓</span>
-        <span class="content">De nouveaux <span class="enhance-text">équipements réseaux</span> sont installés dans les <span class="enhance-text">engins TER</span> durant leurs opérations de rénovation de mi-vie (<span class="enhance-text">Opération OPTER</span>), cependant la <span class="enhance-text">configuration est compliquée</span> dû à la dispersion de ces derniers dans l'engin dans des endroits peu accessibles</span>
-        <span class="label">Solution 💡</span>
-        <span class="content">Création d'un banc sous forme de <span class="enhance-text">baie informatique</span> pouvant accueillir <span class="enhance-text">tous les équipements réseaux</span> d'une rame afin de réaliser la configuration en <span class="enhance-text">1 seule opération en temps masqué</span></span>
-        <span class="label">Gains 📈</span>
-        <span class="content"><span class="enhance-text">Réduction du temps</span> de réalisation de la tâche de 2 agents pendant 2 vacations avec <span class="enhance-text">immobilisation de l'engin</span> à 1 agent pendant 1 vacation en <span class="enhance-text">temps masqué</span></span>
+        <span class="label">️{{ 'PROJECTS.CONTEXT' | translate }} 🛠</span>
+        <span class="content">{{ 'PROJECTS.PROJECT1.CONTEXT' | translate }}</span>
+        <span class="label">{{ 'PROJECTS.PROBLEM' | translate }} ❓</span>
+        <span class="content">{{ 'PROJECTS.PROJECT1.PROBLEM' | translate }}</span>
+        <span class="label">{{ 'PROJECTS.SOLUTION' | translate }} 💡</span>
+        <span class="content">{{ 'PROJECTS.PROJECT1.SOLUTION' | translate }}</span>
+        <span class="label">{{ 'PROJECTS.GAINS' | translate }} 📈</span>
+        <span class="content">{{ 'PROJECTS.PROJECT1.GAINS' | translate }}</span>
     </div>
     <div class="project-links-container">
       <wcs-button class="icon-button" routerLink="BdC_v0_Bischheim">
         <wcs-mat-icon icon="more_horiz"></wcs-mat-icon>
-        Plus d'informations
+        {{ 'PROJECTS.MORE_INFO' | translate }}
       </wcs-button>
     </div>
     <div class="project-logo-container">
@@ -36,24 +42,24 @@
 <wcs-card mode="flat">
 
     <wcs-card-body class="flex-row gap-2em">
-        <h3>Application « Livret de Dépannage Intéractif » <span class="code-text">v2</span></h3>
-        <wcs-badge class="wcs-warning">En cours de livraison</wcs-badge>
+        <h3>{{ 'PROJECTS.PROJECT2.TITLE' | translate }} <span class="code-text">{{ 'PROJECTS.PROJECT2.VERSION' | translate }}</span></h3>
+        <wcs-badge class="wcs-warning">{{ 'PROJECTS.STATUS_DELIVERY' | translate }}</wcs-badge>
     </wcs-card-body>
     <wcs-divider></wcs-divider>
     <wcs-card-body class="project-content-container display-image-right">
         <div class="project-image-container">
             <img src="assets/images/projets/LDv2/HomePageScreenshot.png" class="img-shadow">
-            <span>Capture d'écran de la page d'Accueil</span>
+            <span>{{ 'PROJECTS.PROJECT2.IMG_CAPTION' | translate }}</span>
         </div>
         <div class="project-text-container">
-            <span class="label">️Contexte 🛠</span>
-            <span class="content">Retour d'experience en Centre de Maintenance</span>
-            <span class="label">Problématique ❓</span>
-            <span class="content">La <span class="enhance-text">documentation de maintenance</span> des engins entretenus dans les centres de maintenance SNCF est <span class="enhance-text">dispersée</span> dans une multitudes de références documentaires et <span class="enhance-text">il n'existe pas d'outil organisant et tenant à jour</span> les documents de maintenance</span>
-            <span class="label">Solution 💡</span>
-            <span class="content">Création d'une <span class="enhance-text">application web et mobile</span> de <span class="enhance-text">recherche documentaire</span> comportant une <span class="enhance-text">base de données</span> liant les <span class="enhance-text">spécificités des engins</span> aux schémas correspondants</span>
-            <span class="label">Gains 📈</span>
-            <span class="content"><span class="enhance-text">Réduction de 75%</span> du <span class="enhance-text">temps de recherche</span> d'un document pour les jeunes formés</span>
+            <span class="label">️{{ 'PROJECTS.CONTEXT' | translate }} 🛠</span>
+            <span class="content">{{ 'PROJECTS.PROJECT2.CONTEXT' | translate }}</span>
+            <span class="label">{{ 'PROJECTS.PROBLEM' | translate }} ❓</span>
+            <span class="content">{{ 'PROJECTS.PROJECT2.PROBLEM' | translate }}</span>
+            <span class="label">{{ 'PROJECTS.SOLUTION' | translate }} 💡</span>
+            <span class="content">{{ 'PROJECTS.PROJECT2.SOLUTION' | translate }}</span>
+            <span class="label">{{ 'PROJECTS.GAINS' | translate }} 📈</span>
+            <span class="content">{{ 'PROJECTS.PROJECT2.GAINS' | translate }}</span>
         </div>
         <div class="project-logo-container">
             <img src="assets/images/logos/sncf.png">
@@ -63,24 +69,24 @@
 
 <wcs-card mode="flat">
   <wcs-card-body class="flex-row gap-2em">
-    <h3>Banc de configuration d'équipements réseaux S.DOT <span class="code-text">Final</span></h3>
-    <wcs-badge class="wcs-warning">En cours d'études</wcs-badge>
+    <h3>{{ 'PROJECTS.PROJECT3.TITLE' | translate }} <span class="code-text">{{ 'PROJECTS.PROJECT3.VERSION' | translate }}</span></h3>
+    <wcs-badge class="wcs-warning">{{ 'PROJECTS.STATUS_STUDY' | translate }}</wcs-badge>
   </wcs-card-body>
   <wcs-divider></wcs-divider>
   <wcs-card-body class="project-content-container display-image-left">
     <div class="project-image-container">
         <img src="assets/images/projets/BdC/BdC_proto.png">
-        <span>Modélisation 3D de la baie du banc de configuration</span>
+        <span>{{ 'PROJECTS.PROJECT3.IMG_CAPTION' | translate }}</span>
     </div>
     <div class="project-text-container">
-        <span class="label">️Contexte 🛠</span>
-        <span class="content">Poursuite et amélioration du projet de BTS durant mes études en école d'ingénieur</span>
-        <span class="label">Problématique ❓</span>
-        <span class="content">De nouveaux <span class="enhance-text">équipements réseaux</span> sont installés dans les <span class="enhance-text">engins TER</span> durant leurs opérations de rénovation de mi-vie (<span class="enhance-text">Opération OPTER</span>), cependant ces équipements réseaux sont <span class="enhance-text">dispersés</span> dans le train dans des endroits <span class="enhance-text">peu accessibles</span> et les tâches de <span class="enhance-text">configuration</span> sont très <span class="enhance-text">chronophages</span></span>
-        <span class="label">Solution 💡</span>
-        <span class="content">Création d'un banc sous forme de <span class="enhance-text">baie informatique</span> pouvant accueillir <span class="enhance-text">tous les équipements réseaux</span> d'une rame afin de réaliser la <span class="enhance-text">configuration</span> en d'une manière <span class="enhance-text">automatique</span> et <span class="enhance-text">centralisée</span> sur un ensemble d'équipements réseaux en <span class="enhance-text">temps masqué</span></span>
-        <span class="label">Gains 📈</span>
-        <span class="content"><i>Pas encore mesurable</i></span>
+        <span class="label">️{{ 'PROJECTS.CONTEXT' | translate }} 🛠</span>
+        <span class="content">{{ 'PROJECTS.PROJECT3.CONTEXT' | translate }}</span>
+        <span class="label">{{ 'PROJECTS.PROBLEM' | translate }} ❓</span>
+        <span class="content">{{ 'PROJECTS.PROJECT3.PROBLEM' | translate }}</span>
+        <span class="label">{{ 'PROJECTS.SOLUTION' | translate }} 💡</span>
+        <span class="content">{{ 'PROJECTS.PROJECT3.SOLUTION' | translate }}</span>
+        <span class="label">{{ 'PROJECTS.GAINS' | translate }} 📈</span>
+        <span class="content"><i>{{ 'PROJECTS.GAINS_NOT_MEASURABLE' | translate }}</i></span>
     </div>
       <div class="project-logo-container">
           <img src="assets/images/logos/sncf.png">

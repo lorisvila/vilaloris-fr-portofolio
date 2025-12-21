@@ -43,3 +43,25 @@ wcs-header {
     transition: 1s ease-in-out;
   }
 }
+
+/* Language switch styling */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+}
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.lang-label {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: #888;
+  transition: color 0.2s;
+}
+.lang-label.active {
+  color: #fff;
+  font-weight: 700;
+}

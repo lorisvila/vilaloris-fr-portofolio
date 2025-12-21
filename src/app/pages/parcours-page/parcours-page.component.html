@@ -1,9 +1,51 @@
-<wcs-card mode="flat">
+<wcs-card mode="flat" class="timeline-card">
     <wcs-card-body>
-        <h3>2019-2022 - Baccalauréat professionnel Maintenance des Equipements Industriels</h3>
+        <h2>{{ 'JOURNEY.TITLE' | translate }}</h2>
     </wcs-card-body>
     <wcs-divider></wcs-divider>
     <wcs-card-body>
-        <span>Lycée Charles de Foucauld (Schiltigheim) en alternance au Technicentre Industriel SNCF de Bischheim</span>
-    </wcs-card-body>
+    <div class="timeline">
+      <!-- Étape 1 -->
+      <div class="timeline-step">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <img src="assets/images/logos/sncf.png" class="timeline-logo">
+            <wcs-badge class="wcs-info">{{ 'JOURNEY.STEP1.BADGE' | translate }}</wcs-badge>
+          </div>
+          <h4>{{ 'JOURNEY.STEP1.TITLE' | translate }}</h4>
+          <p [innerHTML]="'JOURNEY.STEP1.DESC' | translate"></p>
+          <span class="timeline-keyword">{{ 'JOURNEY.STEP1.KEYWORD' | translate }}</span>
+        </div>
+      </div>
+      <wcs-divider></wcs-divider>
+      <!-- Étape 2 -->
+      <div class="timeline-step">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <img src="assets/images/logos/jacquard.png" class="timeline-logo">
+            <wcs-badge class="wcs-primary">{{ 'JOURNEY.STEP2.BADGE' | translate }}</wcs-badge>
+          </div>
+          <h4>{{ 'JOURNEY.STEP2.TITLE' | translate }}</h4>
+          <p [innerHTML]="'JOURNEY.STEP2.DESC' | translate"></p>
+          <span class="timeline-keyword">{{ 'JOURNEY.STEP2.KEYWORD' | translate }}</span>
+        </div>
+      </div>
+      <wcs-divider></wcs-divider>
+      <!-- Étape 3 -->
+      <div class="timeline-step">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <img src="assets/images/logos/icam.png" class="timeline-logo">
+            <wcs-badge class="wcs-success">{{ 'JOURNEY.STEP3.BADGE' | translate }}</wcs-badge>
+          </div>
+          <h4>{{ 'JOURNEY.STEP3.TITLE' | translate }}</h4>
+          <p [innerHTML]="'JOURNEY.STEP3.DESC' | translate"></p>
+          <span class="timeline-keyword">{{ 'JOURNEY.STEP3.KEYWORD' | translate }}</span>
+        </div>
+      </div>
+    </div>
+  </wcs-card-body>
 </wcs-card>

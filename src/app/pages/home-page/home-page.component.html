@@ -1,9 +1,9 @@
 <div id="section-one">
   <div class="section-one-subitem">
-    <h1>I am Loris VILA</h1>
-    <span>An engineering student specializing <span class="code-text">Numeric Systems for the Industry</span> at Icam Europe</span>
-    <span>Completing an apprenticeship at SNCF's Central Engineering Cluster</span>
-    <span><i>Passionate about Engineering, Innovation, and Industry 4.0</i></span>
+    <h1>{{ 'HOME.INTRO' | translate }}</h1>
+    <span>{{ 'HOME.SPECIALTY' | translate }} <span class="code-text">{{ 'HOME.SPECIALTY_FIELD' | translate }}</span> {{ 'HOME.AT' | translate }}</span>
+    <span>{{ 'HOME.APPRENTICESHIP' | translate }}</span>
+    <span><i>{{ 'HOME.PASSION' | translate }}</i></span>
     <div class="logos flex-row gap-3em">
       <img src="assets/images/logos/icam.png">
       <img src="assets/images/logos/sncf.png">
@@ -16,9 +16,9 @@
 </div>
 <wcs-card mode="flat" id="section-two">
   <wcs-card-body id="list-skills">
-      <app-list-element icon="🚀">Project Management</app-list-element>
-      <app-list-element icon="🌐">Full stack web application development</app-list-element>
-      <app-list-element icon="🛠">Train Maintenance & Troubleshooting</app-list-element>
-      <app-list-element icon="💻">Train networking tool development</app-list-element>
+      <app-list-element icon="🚀">{{ 'HOME.SKILL_PROJECT_MGMT' | translate }}</app-list-element>
+      <app-list-element icon="🌐">{{ 'HOME.SKILL_FULLSTACK' | translate }}</app-list-element>
+      <app-list-element icon="🛠">{{ 'HOME.SKILL_MAINTENANCE' | translate }}</app-list-element>
+      <app-list-element icon="💻">{{ 'HOME.SKILL_NETWORK' | translate }}</app-list-element>
   </wcs-card-body>
 </wcs-card>

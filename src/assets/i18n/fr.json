@@ -1,0 +1,99 @@
+{
+  "NAV": {
+    "HOME": "Accueil",
+    "PROJECTS": "Projets",
+    "JOURNEY": "Parcours",
+    "PASSIONS": "Passions",
+    "CONTACT": "Contact"
+  },
+  "HEADER": {
+    "TITLE": "VILA Loris - Portofolio"
+  },
+  "HOME": {
+    "INTRO": "Je suis Loris VILA",
+    "SPECIALTY": "Étudiant ingénieur spécialisé",
+    "SPECIALTY_FIELD": "Systèmes Numériques pour l'Industrie",
+    "AT": "à l'Icam Europe",
+    "APPRENTICESHIP": "En alternance au Cluster Central d'Ingénierie SNCF",
+    "PASSION": "Passionné par l'ingénierie, l'innovation et l'Industrie 4.0",
+    "SKILL_PROJECT_MGMT": "Gestion de projets",
+    "SKILL_FULLSTACK": "Développement d'applications web full stack",
+    "SKILL_MAINTENANCE": "Maintenance & Dépannage de trains",
+    "SKILL_NETWORK": "Développement d'outils réseaux pour trains"
+  },
+  "PROJECTS": {
+    "TITLE": "Mes Projets",
+    "INTRO": "Découvrez ici quelques réalisations concrètes menées en entreprise ou à l'école, illustrant mon parcours d'ingénieur et ma passion pour l'innovation technique.",
+    "CONTEXT": "Contexte",
+    "PROBLEM": "Problématique",
+    "SOLUTION": "Solution",
+    "GAINS": "Gains",
+    "MORE_INFO": "Plus d'informations",
+    "STATUS_PROD": "En production",
+    "STATUS_DELIVERY": "En cours de livraison",
+    "STATUS_STUDY": "En cours d'études",
+    "GAINS_NOT_MEASURABLE": "Pas encore mesurable",
+    "PROJECT1": {
+      "TITLE": "Banc de configuration d'équipements réseaux S.DOT",
+      "VERSION": "v0",
+      "CONTEXT": "Projet de fin de BTS Maintenance des Systèmes au Technicentre Industriel de Bischheim",
+      "PROBLEM": "De nouveaux équipements réseaux sont installés dans les engins TER durant leurs opérations de rénovation de mi-vie (Opération OPTER), cependant la configuration est compliquée dû à la dispersion de ces derniers dans l'engin dans des endroits peu accessibles",
+      "SOLUTION": "Création d'un banc sous forme de baie informatique pouvant accueillir tous les équipements réseaux d'une rame afin de réaliser la configuration en 1 seule opération en temps masqué",
+      "GAINS": "Réduction du temps de réalisation de la tâche de 2 agents pendant 2 vacations avec immobilisation de l'engin à 1 agent pendant 1 vacation en temps masqué",
+      "IMG_CAPTION": "Photo du banc prototype au Technicentre Industriel de Bischheim"
+    },
+    "PROJECT2": {
+      "TITLE": "Application « Livret de Dépannage Intéractif »",
+      "VERSION": "v2",
+      "CONTEXT": "Retour d'expérience en Centre de Maintenance",
+      "PROBLEM": "La documentation de maintenance des engins entretenus dans les centres de maintenance SNCF est dispersée dans une multitudes de références documentaires et il n'existe pas d'outil organisant et tenant à jour les documents de maintenance",
+      "SOLUTION": "Création d'une application web et mobile de recherche documentaire comportant une base de données liant les spécificités des engins aux schémas correspondants",
+      "GAINS": "Réduction de 75% du temps de recherche d'un document pour les jeunes formés",
+      "IMG_CAPTION": "Capture d'écran de la page d'Accueil"
+    },
+    "PROJECT3": {
+      "TITLE": "Banc de configuration d'équipements réseaux S.DOT",
+      "VERSION": "Final",
+      "CONTEXT": "Poursuite et amélioration du projet de BTS durant mes études en école d'ingénieur",
+      "PROBLEM": "De nouveaux équipements réseaux sont installés dans les engins TER durant leurs opérations de rénovation de mi-vie (Opération OPTER), cependant ces équipements réseaux sont dispersés dans le train dans des endroits peu accessibles et les tâches de configuration sont très chronophages",
+      "SOLUTION": "Création d'un banc sous forme de baie informatique pouvant accueillir tous les équipements réseaux d'une rame afin de réaliser la configuration de manière automatique et centralisée sur un ensemble d'équipements réseaux en temps masqué",
+      "IMG_CAPTION": "Modélisation 3D de la baie du banc de configuration"
+    }
+  },
+  "JOURNEY": {
+    "TITLE": "Mon Parcours",
+    "STEP1": {
+      "BADGE": "2019 - 2022",
+      "TITLE": "Bac Pro MEI",
+      "DESC": "Alternance à la SNCF (Technicentre Industriel de Bischheim)<br>Lycée Charles de Foucauld, Schiltigheim",
+      "KEYWORD": "\"Expertise terrain\""
+    },
+    "STEP2": {
+      "BADGE": "2022 - 2024",
+      "TITLE": "BTS MS",
+      "DESC": "Alternance SNCF (Bischheim, Equipe d'Essais Dépannages)<br>Lycée Jacquard, Paris 19e",
+      "KEYWORD": "\"Maintenance & Innovation\""
+    },
+    "STEP3": {
+      "BADGE": "2024 - Maintenant",
+      "TITLE": "ICAM SNI",
+      "DESC": "Alternance SNCF Ingénierie du Matériel (Cluster Centre, Plateau OPTER AGC)<br>ICAM Strasbourg Europe",
+      "KEYWORD": "\"Numérique & Industrie\""
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Formulaire de contact",
+    "SEND": "Envoyer"
+  },
+  "ERRORS": {
+    "404_TITLE": "Erreur 404 🤖",
+    "404_DESC": "La ressource demandée n'a pas été trouvée...",
+    "404_REDIRECT": "Vous allez être redirigé dans quelques instants",
+    "DEV_TITLE": "Aïe 🚧 🏗️",
+    "DEV_DESC": "Cette page est actuellement en cours de développement..."
+  },
+  "LANG": {
+    "FR": "FR",
+    "EN": "EN"
+  }
+}

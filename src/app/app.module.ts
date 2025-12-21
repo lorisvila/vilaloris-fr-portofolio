@@ -18,6 +18,11 @@ import { Error404Component } from './pages/errors/error-404/error-404.component'
 import { PassionsPageComponent } from './pages/passions-page/passions-page.component';
 import { ErrorDevComponent } from './pages/errors/error-dev/error-dev.component';
 
+// ngx-translate imports
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { provideTranslateHttpLoader, TranslateHttpLoader } from '@ngx-translate/http-loader';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +38,7 @@ import { ErrorDevComponent } from './pages/errors/error-dev/error-dev.component'
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     WcsAngularModule,
     appRoutingModule,
     ToastrModule.forRoot({
@@ -47,8 +53,12 @@ import { ErrorDevComponent } from './pages/errors/error-dev/error-dev.component'
     ReactiveFormsModule,
     FormlyModule.forRoot(),
     WcsFormlyModule,
+    TranslateModule.forRoot(),
   ],
-  providers: [],
+  providers: [
+    // Provide configuration for TranslateHttpLoader (v17+)
+    ...provideTranslateHttpLoader({ prefix: '/assets/i18n/', suffix: '.json' }),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

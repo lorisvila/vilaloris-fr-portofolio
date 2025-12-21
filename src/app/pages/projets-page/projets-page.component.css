@@ -1,3 +1,20 @@
+/* Header de la page projets */
+.projects-header {
+  margin-bottom: 2.5em;
+  margin-top: 0.5em;
+  text-align: left;
+}
+.projects-header h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+}
+.projects-intro {
+  font-size: 1.15em;
+  color: #444;
+  max-width: 700px;
+  margin: 0;
+}
 :host {
   display: flex;
   flex-flow: column nowrap;
@@ -61,6 +78,8 @@
   text-align: left; /* Align content to the left */
 }
 
+
+/* Effet hover subtil sur la partie image */
 .project-image-container {
   grid-area: image;
   display: flex;
@@ -68,10 +87,24 @@
   align-items: center;
   justify-content: center;
   gap: 1em;
+  transition: background 0.2s, box-shadow 0.2s, border-radius 0.2s;
+  border-radius: 12px;
+  padding: 0.5em;
+}
+.project-image-container:hover {
+  background: rgba(0, 123, 255, 0.07);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  border-radius: 16px;
 }
 .project-image-container > img {
   max-width: 100%;
   max-height: 50vh;
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-image-container:hover > img {
+  transform: scale(1.04);
+  box-shadow: 0 2px 16px rgba(0,123,255,0.10);
 }
 .project-image-container > span {
   font-weight: 300;
@@ -80,6 +113,7 @@
   text-align: center;
 }
 
+
 .project-links-container {
   grid-area: links;
   display: flex;
@@ -87,7 +121,9 @@
   align-items: center;
   justify-content: flex-end;
   gap: 1em;
+  margin-top: 1em;
 }
+
 
 .project-logo-container {
   grid-area: logos;
@@ -95,7 +131,8 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 1em;
+  gap: 2em;
+  margin-top: 1em;
 }
 
 .project-logo-container > img {
