@@ -113,18 +113,6 @@
   text-align: center;
 }
 
-
-.project-links-container {
-  grid-area: links;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1em;
-  margin-top: 1em;
-}
-
-
 .project-logo-container {
   grid-area: logos;
   display: flex;

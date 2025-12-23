@@ -12,16 +12,15 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import {ReactiveFormsModule} from "@angular/forms";
 import {FormlyModule} from "@ngx-formly/core";
 import {WcsFormlyModule} from "wcs-formly";
-import { BdCV0BhmPageComponent } from './pages/projets-page/project/bd-c-v0-bhm-page/bd-c-v0-bhm-page.component';
 import { ParcoursPageComponent } from './pages/parcours-page/parcours-page.component';
 import { Error404Component } from './pages/errors/error-404/error-404.component';
 import { PassionsPageComponent } from './pages/passions-page/passions-page.component';
 import { ErrorDevComponent } from './pages/errors/error-dev/error-dev.component';
 
 // ngx-translate imports
-import { HttpClientModule, HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import { provideTranslateHttpLoader, TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule } from '@angular/common/http';
+import {TranslateModule, TranslatePipe} from '@ngx-translate/core';
+import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @NgModule({
   declarations: [
@@ -30,7 +29,6 @@ import { provideTranslateHttpLoader, TranslateHttpLoader } from '@ngx-translate/
     ListElementComponent,
     ProjetsPageComponent,
     ContactPageComponent,
-    BdCV0BhmPageComponent,
     ParcoursPageComponent,
     Error404Component,
     PassionsPageComponent,
@@ -54,6 +52,7 @@ import { provideTranslateHttpLoader, TranslateHttpLoader } from '@ngx-translate/
     FormlyModule.forRoot(),
     WcsFormlyModule,
     TranslateModule.forRoot(),
+    TranslatePipe,
   ],
   providers: [
     // Provide configuration for TranslateHttpLoader (v17+)
