@@ -3,9 +3,9 @@
   <h1 slot="title">{{ 'HEADER.TITLE' | translate }}</h1>
   <div slot="actions" class="header-actions">
     <div class="lang-switch">
-      <span class="lang-label" [class.active]="isEnglish">EN</span>
+      <span class="lang-label" [class.active]="isEnglish">EN 🇬🇧</span>
       <wcs-switch (wcsChange)="toggleLanguage($event)"></wcs-switch>
-      <span class="lang-label" [class.active]="!isEnglish">FR</span>
+      <span class="lang-label" [class.active]="!isEnglish">🇫🇷 FR</span>
     </div>
     <wcs-button [href]="'mailto:' + email">{{ 'NAV.CONTACT' | translate }}</wcs-button>
   </div>
