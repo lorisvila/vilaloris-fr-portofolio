@@ -7,7 +7,9 @@
            [class.active]="isActive(i)"
            [class.disabled]="isDisabled(step, i)"
            [class.first]="first"
-           [class.last]="last">
+           [class.last]="last"
+           [class.education]="step.details?.type === 'education'"
+           [class.work]="step.details?.type === 'work'">
         <button class="step-button"
                 [disabled]="isDisabled(step, i)"
                 (click)="onStepClick(step, i)"

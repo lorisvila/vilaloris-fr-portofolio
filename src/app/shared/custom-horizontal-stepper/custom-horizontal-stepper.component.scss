@@ -1,5 +1,6 @@
 :host {
   --stepper-primary-color: #0088ce;
+  --stepper-education-color: #f57c00; // wcs-orange
   --stepper-inactive-color: #b0b0b0;
   --stepper-disabled-color: #e0e0e0;
   --stepper-text-color: #333;
@@ -100,6 +101,20 @@
     color: white;
     box-shadow: 0 0 0 4px rgba(0, 136, 206, 0.25);
   }
+
+  // Education type - orange color
+  .education.passed & {
+    border-color: var(--stepper-education-color);
+    background: var(--stepper-education-color);
+    color: white;
+  }
+
+  .education.active & {
+    border-color: var(--stepper-education-color);
+    background: var(--stepper-education-color);
+    color: white;
+    box-shadow: 0 0 0 4px rgba(245, 124, 0, 0.25);
+  }
 }
 
 .step-indicator {
@@ -186,6 +201,13 @@
     color: var(--stepper-primary-color);
     background: none !important;
     background-color: transparent !important;
+  }
+
+  // Education type - orange color for active label
+  .education & {
+    &.active {
+      color: var(--stepper-education-color);
+    }
   }
 
   &.disabled {
