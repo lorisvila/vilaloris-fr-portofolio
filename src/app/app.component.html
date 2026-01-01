@@ -7,7 +7,7 @@
       <wcs-switch (wcsChange)="toggleLanguage($event)"></wcs-switch>
       <span class="lang-label" [class.active]="!isEnglish">FR</span>
     </div>
-    <wcs-button routerLink="/Contact">{{ 'NAV.CONTACT' | translate }}</wcs-button>
+    <wcs-button [href]="'mailto:' + email">{{ 'NAV.CONTACT' | translate }}</wcs-button>
   </div>
 </wcs-header>
 
