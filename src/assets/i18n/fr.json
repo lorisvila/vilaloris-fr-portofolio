@@ -37,16 +37,16 @@
       "TYPE_WORK": "Expérience professionnelle"
     },
     "LOCATIONS": {
-      "CHATILLON": "Châtillon, France",
-      "LILLE": "Lille, France",
+      "CHATILLON": "Technicentre Industriel SNCF de Bischheim, France",
+      "NEVERS": "Nevers, France",
       "PARIS": "Paris, France",
-      "SAINT_DENIS": "Saint-Denis, France"
+      "SCHILTIGHEIM": "Schiltigheim, France"
     },
     "ORGANIZATIONS": {
       "ICAM": "ICAM - Institut Catholique des Arts et Métiers",
-      "JACQUARD": "Lycée Jacquard",
-      "SNCF_ING": "SNCF Voyageurs - Ingénierie",
-      "SNCF_TC": "SNCF Voyageurs - Technicentre"
+      "JACQUARD": "Lycée Jacquard, Paris 19e",
+      "SNCF_ING": "SNCF Voyageurs - Cluster 'Ingénierie Centre - Plateau OpTER AGC",
+      "SNCF_TC": "SNCF Voyageurs - Technicentre Industriel de Bischheim"
     },
     "STEPS": {
       "STEP1": {

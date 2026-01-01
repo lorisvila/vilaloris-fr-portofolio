@@ -37,16 +37,16 @@
       "TYPE_WORK": "Work Experience"
     },
     "LOCATIONS": {
-      "CHATILLON": "Châtillon, France",
-      "LILLE": "Lille, France",
+      "CHATILLON": "Bischheim, France",
+      "NEVERS": "Nevers, France",
       "PARIS": "Paris, France",
-      "SAINT_DENIS": "Saint-Denis, France"
+      "SCHILTIGHEIM": "Schiltigheim, France"
     },
     "ORGANIZATIONS": {
       "ICAM": "ICAM - Catholic Institute of Arts and Crafts",
-      "JACQUARD": "Jacquard High School",
-      "SNCF_ING": "SNCF Voyageurs - Engineering",
-      "SNCF_TC": "SNCF Voyageurs - Technicentre"
+      "JACQUARD": "Paris 19e Jacquard High School",
+      "SNCF_ING": "SNCF Voyageurs - Central Engineering Cluster - OpTER AGC Team",
+      "SNCF_TC": "SNCF Voyageurs - Bischheim Industrial Maintenance Center"
     },
     "STEPS": {
       "STEP1": {
