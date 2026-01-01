@@ -1,0 +1,41 @@
+<div class="stepper-container">
+  <div class="steps-row">
+    <ng-container *ngFor="let step of steps; let i = index; let first = first; let last = last">
+      <!-- Step circle -->
+      <div class="step-wrapper"
+           [class.passed]="isPassed(i)"
+           [class.active]="isActive(i)"
+           [class.disabled]="isDisabled(step, i)"
+           [class.first]="first"
+           [class.last]="last">
+        <button class="step-button"
+                [disabled]="isDisabled(step, i)"
+                (click)="onStepClick(step, i)"
+                [attr.aria-current]="isActive(i) ? 'step' : null"
+                role="tab">
+          <span class="step-indicator">
+            <span *ngIf="checkOnComplete && isComplete(step, i) && !isActive(i)" class="check-icon">✓</span>
+            <span *ngIf="step.icon && (!checkOnComplete || !isComplete(step, i) || isActive(i))" class="step-icon">{{ step.icon }}</span>
+            <span *ngIf="!step.icon && (!checkOnComplete || !isComplete(step, i) || isActive(i))" class="step-number">{{ i + 1 }}</span>
+          </span>
+        </button>
+        <!-- Label under the button -->
+        <div class="label-container"
+             [class.first]="first"
+             [class.last]="last">
+          <span class="label-text"
+                [class.active]="isActive(i)"
+                [class.disabled]="isDisabled(step, i)"
+                [style.fontSize]="labelFontSize">{{ step.text }}</span>
+        </div>
+      </div>
+      <!-- Connector line -->
+      <div class="connector"
+           *ngIf="!last"
+           [class.filled]="isPassed(i + 1)"
+           [class.dashed]="!isPassed(i + 1)">
+      </div>
+    </ng-container>
+  </div>
+</div>
+
