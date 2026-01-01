@@ -19,8 +19,8 @@ export class ParcoursPageComponent {
         organizationKey: 'JOURNEY.ORGANIZATIONS.SNCF_TC',
         organizationLogo: 'assets/images/logos/sncf.png',
         locationKey: 'JOURNEY.LOCATIONS.CHATILLON',
-        startDate: '2018',
-        endDate: '2019'
+        startDate: '2019',
+        endDate: '2022'
       }
     },
     {
@@ -78,21 +78,21 @@ export class ParcoursPageComponent {
         type: 'work',
         organizationKey: 'JOURNEY.ORGANIZATIONS.SNCF_ING',
         organizationLogo: 'assets/images/logos/sncf.png',
-        locationKey: 'JOURNEY.LOCATIONS.SAINT_DENIS',
+        locationKey: 'JOURNEY.LOCATIONS.NEVERS',
         startDate: '2022',
-        endDate: undefined  // Present
+        endDate: '2027'  // Present
       }
     },
     {
-      icon: 'check',
+      icon: 'school',
       i18nKey: 'JOURNEY.STEPS.STEP7',
       details: {
         type: 'education',
         organizationKey: 'JOURNEY.ORGANIZATIONS.ICAM',
         organizationLogo: 'assets/images/logos/icam.png',
-        locationKey: 'JOURNEY.LOCATIONS.LILLE',
+        locationKey: 'JOURNEY.LOCATIONS.SCHILTIGHEIM',
         startDate: '2022',
-        endDate: '2025'
+        endDate: '2027'
       }
     },
   ];
