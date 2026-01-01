@@ -26,7 +26,7 @@
           <span class="label-text"
                 [class.active]="isActive(i)"
                 [class.disabled]="isDisabled(step, i)"
-                [style.fontSize]="labelFontSize">{{ step.text }}</span>
+                [style.fontSize]="labelFontSize">{{ step.i18nKey ? (getStepLabel(step) | translate) : step.text }}</span>
         </div>
       </div>
       <!-- Connector line -->

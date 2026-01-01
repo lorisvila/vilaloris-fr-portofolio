@@ -6,7 +6,6 @@
     <wcs-divider></wcs-divider>
 
     <wcs-card-body>
-
         <app-custom-horizontal-stepper
                 [mode]="'linear'"
                 [checkOnComplete]="false"
@@ -17,8 +16,89 @@
         </app-custom-horizontal-stepper>
 
         <div class="stepper-controls">
-            <wcs-button mode="clear" (click)="previousStep()" [attr.disabled]="currentStep === 0 ? true : null">Previous</wcs-button>
-            <wcs-button mode="clear" (click)="nextStep()" [attr.disabled]="currentStep === steps.length - 1 ? true : null">Next</wcs-button>
+            <wcs-button mode="clear" (click)="previousStep()" [attr.disabled]="currentStep === 0 ? true : null">
+                <span class="material-symbols-outlined">arrow_back</span>
+                {{ 'JOURNEY.COMMON.PREVIOUS' | translate }}
+            </wcs-button>
+            <wcs-button mode="clear" (click)="nextStep()" [attr.disabled]="currentStep === steps.length - 1 ? true : null">
+                {{ 'JOURNEY.COMMON.NEXT' | translate }}
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </wcs-button>
+        </div>
+    </wcs-card-body>
+</wcs-card>
+
+<!-- Step Details Card -->
+<wcs-card mode="flat" class="step-details-card" *ngIf="currentStepDetails">
+    <!-- Header with title and type badge -->
+    <wcs-card-body class="step-header">
+        <div class="step-header-content">
+            <h2 class="step-title">{{ currentStepI18nKey + '.TITLE' | translate }}</h2>
+            <wcs-badge [ngClass]="currentStepDetails.type === 'work' ? 'badge-work' : 'badge-education'">
+                {{ currentStepDetails.type === 'work' ? ('JOURNEY.COMMON.TYPE_WORK' | translate) : ('JOURNEY.COMMON.TYPE_EDUCATION' | translate) }}
+            </wcs-badge>
+        </div>
+    </wcs-card-body>
+
+    <wcs-divider></wcs-divider>
+
+    <wcs-card-body class="step-content">
+        <div class="step-layout">
+            <!-- Left side: Organization logo and info -->
+            <div class="organization-section">
+                <div class="organization-logo-container">
+                    <img *ngIf="currentStepDetails.organizationLogo"
+                         [src]="currentStepDetails.organizationLogo"
+                         [alt]="currentStepDetails.organizationKey | translate"
+                         class="organization-logo">
+                    <div *ngIf="!currentStepDetails.organizationLogo" class="organization-logo-placeholder">
+                        <span class="material-symbols-outlined">{{ currentStepDetails.type === 'work' ? 'business' : 'school' }}</span>
+                    </div>
+                </div>
+                <div class="organization-info">
+                    <h3 class="organization-name">{{ currentStepDetails.organizationKey | translate }}</h3>
+                    <div class="organization-meta">
+                        <span class="meta-item">
+                            <span class="material-symbols-outlined">location_on</span>
+                            {{ currentStepDetails.locationKey | translate }}
+                        </span>
+                        <span class="meta-item">
+                            <span class="material-symbols-outlined">calendar_month</span>
+                            {{ currentStepDetails.startDate }} - {{ currentStepDetails.endDate || ('JOURNEY.COMMON.PRESENT' | translate) }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side: Description and details -->
+            <div class="details-section">
+                <!-- Description -->
+                <div class="description-block">
+                    <h4>{{ 'JOURNEY.COMMON.DESCRIPTION' | translate }}</h4>
+                    <p>{{ currentStepI18nKey + '.DESCRIPTION' | translate }}</p>
+                </div>
+
+                <!-- Skills -->
+                <div class="skills-block">
+                    <h4>{{ 'JOURNEY.COMMON.SKILLS' | translate }}</h4>
+                    <div class="skills-list">
+                        <ng-container *ngFor="let skill of (currentStepI18nKey + '.SKILLS' | translate)">
+                            <wcs-badge class="skill-badge">{{ skill }}</wcs-badge>
+                        </ng-container>
+                    </div>
+                </div>
+
+                <!-- Achievements -->
+                <div class="achievements-block">
+                    <h4>{{ 'JOURNEY.COMMON.ACHIEVEMENTS' | translate }}</h4>
+                    <ul class="achievements-list">
+                        <li *ngFor="let achievement of (currentStepI18nKey + '.ACHIEVEMENTS' | translate)">
+                            <span class="material-symbols-outlined achievement-icon">check_circle</span>
+                            {{ achievement }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
     </wcs-card-body>

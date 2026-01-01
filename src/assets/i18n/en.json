@@ -1,99 +1,207 @@
 {
-  "NAV": {
-    "HOME": "Home",
-    "PROJECTS": "Projects",
-    "JOURNEY": "Journey",
-    "PASSIONS": "Passions",
-    "CONTACT": "Contact"
+  "CONTACT": {
+    "SEND": "Send",
+    "TITLE": "Contact Form"
+  },
+  "ERRORS": {
+    "404_DESC": "The requested resource was not found...",
+    "404_REDIRECT": "You will be redirected in a few moments",
+    "404_TITLE": "Error 404 🤖",
+    "DEV_DESC": "This page is currently under development...",
+    "DEV_TITLE": "Oops 🚧 🏗️"
   },
   "HEADER": {
     "TITLE": "VILA Loris - Portfolio"
   },
   "HOME": {
-    "INTRO": "I am Loris VILA",
-    "SPECIALTY": "An engineering student specializing in",
-    "SPECIALTY_FIELD": "Numeric Systems for the Industry",
-    "AT": "at Icam Europe",
     "APPRENTICESHIP": "Completing an apprenticeship at SNCF's Central Engineering Cluster",
+    "AT": "at Icam Europe",
+    "INTRO": "I am Loris VILA",
     "PASSION": "Passionate about Engineering, Innovation, and Industry 4.0",
-    "SKILL_PROJECT_MGMT": "Project Management",
     "SKILL_FULLSTACK": "Full stack web application development",
     "SKILL_MAINTENANCE": "Train Maintenance & Troubleshooting",
-    "SKILL_NETWORK": "Train networking tool development"
-  },
-  "PROJECTS": {
-    "TITLE": "My Projects",
-    "INTRO": "Discover here some concrete achievements made in companies or schools, illustrating my engineering journey and my passion for technical innovation.",
-    "CONTEXT": "Context",
-    "PROBLEM": "Problem",
-    "SOLUTION": "Solution",
-    "GAINS": "Gains",
-    "MORE_INFO": "More information",
-    "STATUS_PROD": "In production",
-    "STATUS_DELIVERY": "In delivery",
-    "STATUS_STUDY": "Under study",
-    "GAINS_NOT_MEASURABLE": "Not yet measurable",
-    "PROJECT1": {
-      "TITLE": "S.DOT network equipment configuration bench",
-      "VERSION": "v0",
-      "CONTEXT": "End-of-studies project for the BTS in Systems Maintenance at the Bischheim Industrial Technicentre",
-      "PROBLEM": "New network equipment is installed in TER trains during their mid-life renovation operations (OPTER Operation), however the configuration is complicated due to their dispersion in hard-to-access areas of the train",
-      "SOLUTION": "Creation of a bench in the form of an IT rack that can accommodate all network equipment of a trainset, enabling configuration in a single masked-time operation",
-      "GAINS": "Reduction of task time from 2 agents over 2 shifts with train immobilization, to 1 agent for 1 shift in masked time",
-      "IMG_CAPTION": "Photo of the prototype bench at the Bischheim Industrial Technicentre"
-    },
-    "PROJECT2": {
-      "TITLE": "Interactive Troubleshooting Booklet application",
-      "VERSION": "v2",
-      "CONTEXT": "Feedback from a Maintenance Center",
-      "PROBLEM": "Maintenance documentation for trains maintained at SNCF maintenance centers is scattered across multiple document references and there is no tool organizing and keeping up-to-date the maintenance documents",
-      "SOLUTION": "Creation of a web and mobile document search application with a database linking train specificities to corresponding schematics",
-      "GAINS": "75% reduction in document search time for newly trained staff",
-      "IMG_CAPTION": "Screenshot of the Home Page"
-    },
-    "PROJECT3": {
-      "TITLE": "S.DOT network equipment configuration bench",
-      "VERSION": "Final",
-      "CONTEXT": "Continuation and improvement of the BTS project during engineering school studies",
-      "PROBLEM": "New network equipment is installed in TER trains during their mid-life renovation operations (OPTER Operation), however these network devices are scattered throughout the train in hard-to-access areas and configuration tasks are very time-consuming",
-      "SOLUTION": "Creation of a bench in the form of an IT rack that can accommodate all network equipment of a trainset, enabling automatic and centralized configuration on a set of network equipment in masked time",
-      "IMG_CAPTION": "3D model of the configuration bench rack"
-    }
+    "SKILL_NETWORK": "Train networking tool development",
+    "SKILL_PROJECT_MGMT": "Project Management",
+    "SPECIALTY": "An engineering student specializing in",
+    "SPECIALTY_FIELD": "Numeric Systems for the Industry"
   },
   "JOURNEY": {
-    "TITLE": "My Journey",
-    "STEP1": {
-      "BADGE": "2019 - 2022",
-      "TITLE": "Vocational Baccalaureate MEI",
-      "DESC": "Apprenticeship at SNCF (Bischheim Industrial Technicentre)<br>Charles de Foucauld High School, Schiltigheim",
-      "KEYWORD": "\"Field Expertise\""
+    "COMMON": {
+      "ACHIEVEMENTS": "Key Achievements",
+      "DESCRIPTION": "Description",
+      "NEXT": "Next",
+      "PRESENT": "Present",
+      "PREVIOUS": "Previous",
+      "SKILLS": "Skills Acquired",
+      "TYPE_EDUCATION": "Education",
+      "TYPE_WORK": "Work Experience"
     },
-    "STEP2": {
-      "BADGE": "2022 - 2024",
-      "TITLE": "BTS MS",
-      "DESC": "Apprenticeship at SNCF (Bischheim, Test & Troubleshooting Team)<br>Jacquard High School, Paris 19th",
-      "KEYWORD": "\"Maintenance & Innovation\""
+    "LOCATIONS": {
+      "CHATILLON": "Châtillon, France",
+      "LILLE": "Lille, France",
+      "PARIS": "Paris, France",
+      "SAINT_DENIS": "Saint-Denis, France"
     },
-    "STEP3": {
-      "BADGE": "2024 - Now",
-      "TITLE": "ICAM SNI",
-      "DESC": "Apprenticeship at SNCF Material Engineering (Central Cluster, OPTER AGC Platform)<br>ICAM Strasbourg Europe",
-      "KEYWORD": "\"Digital & Industry\""
-    }
-  },
-  "CONTACT": {
-    "TITLE": "Contact Form",
-    "SEND": "Send"
-  },
-  "ERRORS": {
-    "404_TITLE": "Error 404 🤖",
-    "404_DESC": "The requested resource was not found...",
-    "404_REDIRECT": "You will be redirected in a few moments",
-    "DEV_TITLE": "Oops 🚧 🏗️",
-    "DEV_DESC": "This page is currently under development..."
+    "ORGANIZATIONS": {
+      "ICAM": "ICAM - Catholic Institute of Arts and Crafts",
+      "JACQUARD": "Jacquard High School",
+      "SNCF_ING": "SNCF Voyageurs - Engineering",
+      "SNCF_TC": "SNCF Voyageurs - Technicentre"
+    },
+    "STEPS": {
+      "STEP1": {
+        "ACHIEVEMENTS": [
+          "Safety procedure training",
+          "Railway certifications"
+        ],
+        "DESCRIPTION": "Preventive and corrective maintenance of TGV train axles. Quality control and compliance with railway safety procedures.",
+        "SKILLS": [
+          "Industrial maintenance",
+          "Quality control",
+          "Railway safety"
+        ],
+        "TEXT": "TGV Axle Operator",
+        "TITLE": "TGV Axle Operator"
+      },
+      "STEP2": {
+        "ACHIEVEMENTS": [
+          "Onboard systems certification",
+          "Autonomy on critical interventions"
+        ],
+        "DESCRIPTION": "Diagnosis and troubleshooting of TGV onboard systems. Performing functional tests before commissioning.",
+        "SKILLS": [
+          "Electronic diagnosis",
+          "Troubleshooting",
+          "Functional testing"
+        ],
+        "TEXT": "TGV Test & Troubleshooting Operator",
+        "TITLE": "TGV Test & Troubleshooting Operator"
+      },
+      "STEP3": {
+        "ACHIEVEMENTS": [
+          "Diploma obtained with highest honors"
+        ],
+        "DESCRIPTION": "Training in Industrial Equipment Maintenance. Acquisition of skills in mechanics, electricity and automation.",
+        "SKILLS": [
+          "Mechanics",
+          "Electricity",
+          "Automation",
+          "Pneumatics"
+        ],
+        "TEXT": "Vocational Baccalaureate MEI",
+        "TITLE": "Vocational Baccalaureate in Industrial Equipment Maintenance"
+      },
+      "STEP4": {
+        "ACHIEVEMENTS": [
+          "Technical referent",
+          "Internal trainer"
+        ],
+        "DESCRIPTION": "Technical lead for complex testing and troubleshooting. Technical supervision of operators. Procedure documentation.",
+        "SKILLS": [
+          "Technical management",
+          "Procedure writing",
+          "Training",
+          "TGV expertise"
+        ],
+        "TEXT": "TGV Test & Troubleshooting Technician",
+        "TITLE": "TGV Test & Troubleshooting Technician"
+      },
+      "STEP5": {
+        "ACHIEVEMENTS": [
+          "Diploma obtained",
+          "Final project on maintenance optimization"
+        ],
+        "DESCRIPTION": "Higher education in production systems maintenance. Specialization in railway systems.",
+        "SKILLS": [
+          "Predictive maintenance",
+          "Maintenance management",
+          "CMMS",
+          "Vibration analysis"
+        ],
+        "TEXT": "BTS Systems Maintenance",
+        "TITLE": "BTS in Systems Maintenance"
+      },
+      "STEP6": {
+        "ACHIEVEMENTS": [
+          "New features deployment",
+          "System certification"
+        ],
+        "DESCRIPTION": "Systems engineer for the OpTER AGC project. Design and validation of system evolutions. Interface with development teams.",
+        "SKILLS": [
+          "Systems engineering",
+          "Project management",
+          "Validation",
+          "Technical specifications"
+        ],
+        "TEXT": "OpTER AGC Systems Engineer",
+        "TITLE": "OpTER AGC Systems Engineer"
+      },
+      "STEP7": {
+        "ACHIEVEMENTS": [
+          "In progress",
+          "Industrial projects completed"
+        ],
+        "DESCRIPTION": "Engineering degree through apprenticeship. Specialization in digital systems and innovation. Concrete industrial projects.",
+        "SKILLS": [
+          "Software development",
+          "IoT",
+          "Artificial intelligence",
+          "Project management"
+        ],
+        "TEXT": "ICAM Engineering Degree SNI",
+        "TITLE": "ICAM Engineering Degree - Digital & Innovation Specialty"
+      }
+    },
+    "TITLE": "My Journey"
   },
   "LANG": {
-    "FR": "FR",
-    "EN": "EN"
+    "EN": "EN",
+    "FR": "FR"
+  },
+  "NAV": {
+    "CONTACT": "Contact",
+    "HOME": "Home",
+    "JOURNEY": "Journey",
+    "PASSIONS": "Passions",
+    "PROJECTS": "Projects"
+  },
+  "PROJECTS": {
+    "CONTEXT": "Context",
+    "GAINS": "Gains",
+    "GAINS_NOT_MEASURABLE": "Not yet measurable",
+    "INTRO": "Discover here some concrete achievements made in companies or schools, illustrating my engineering journey and my passion for technical innovation.",
+    "MORE_INFO": "More information",
+    "PROBLEM": "Problem",
+    "PROJECT1": {
+      "CONTEXT": "End-of-studies project for the BTS in Systems Maintenance at the Bischheim Industrial Technicentre",
+      "GAINS": "Reduction of task time from 2 agents over 2 shifts with train immobilization, to 1 agent for 1 shift in masked time",
+      "IMG_CAPTION": "Photo of the prototype bench at the Bischheim Industrial Technicentre",
+      "PROBLEM": "New network equipment is installed in TER trains during their mid-life renovation operations (OPTER Operation), however the configuration is complicated due to their dispersion in hard-to-access areas of the train",
+      "SOLUTION": "Creation of a bench in the form of an IT rack that can accommodate all network equipment of a trainset, enabling configuration in a single masked-time operation",
+      "TITLE": "S.DOT network equipment configuration bench",
+      "VERSION": "v0"
+    },
+    "PROJECT2": {
+      "CONTEXT": "Feedback from a Maintenance Center",
+      "GAINS": "75% reduction in document search time for newly trained staff",
+      "IMG_CAPTION": "Screenshot of the Home Page",
+      "PROBLEM": "Maintenance documentation for trains maintained at SNCF maintenance centers is scattered across multiple document references and there is no tool organizing and keeping up-to-date the maintenance documents",
+      "SOLUTION": "Creation of a web and mobile document search application with a database linking train specificities to corresponding schematics",
+      "TITLE": "Interactive Troubleshooting Booklet application",
+      "VERSION": "v2"
+    },
+    "PROJECT3": {
+      "CONTEXT": "Continuation and improvement of the BTS project during engineering school studies",
+      "IMG_CAPTION": "3D model of the configuration bench rack",
+      "PROBLEM": "New network equipment is installed in TER trains during their mid-life renovation operations (OPTER Operation), however these network devices are scattered throughout the train in hard-to-access areas and configuration tasks are very time-consuming",
+      "SOLUTION": "Creation of a bench in the form of an IT rack that can accommodate all network equipment of a trainset, enabling automatic and centralized configuration on a set of network equipment in masked time",
+      "TITLE": "S.DOT network equipment configuration bench",
+      "VERSION": "Final"
+    },
+    "SOLUTION": "Solution",
+    "STATUS_DELIVERY": "In delivery",
+    "STATUS_PROD": "In production",
+    "STATUS_STUDY": "Under study",
+    "TITLE": "My Projects"
   }
 }

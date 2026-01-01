@@ -1,99 +1,207 @@
 {
-  "NAV": {
-    "HOME": "Accueil",
-    "PROJECTS": "Projets",
-    "JOURNEY": "Parcours",
-    "PASSIONS": "Passions",
-    "CONTACT": "Contact"
+  "CONTACT": {
+    "SEND": "Envoyer",
+    "TITLE": "Formulaire de contact"
+  },
+  "ERRORS": {
+    "404_DESC": "La ressource demandée n'a pas été trouvée...",
+    "404_REDIRECT": "Vous allez être redirigé dans quelques instants",
+    "404_TITLE": "Erreur 404 🤖",
+    "DEV_DESC": "Cette page est actuellement en cours de développement...",
+    "DEV_TITLE": "Aïe 🚧 🏗️"
   },
   "HEADER": {
     "TITLE": "VILA Loris - Portofolio"
   },
   "HOME": {
-    "INTRO": "Je suis Loris VILA",
-    "SPECIALTY": "Étudiant ingénieur spécialisé",
-    "SPECIALTY_FIELD": "Systèmes Numériques pour l'Industrie",
-    "AT": "à l'Icam Europe",
     "APPRENTICESHIP": "En alternance au Cluster Central d'Ingénierie SNCF",
+    "AT": "à l'Icam Europe",
+    "INTRO": "Je suis Loris VILA",
     "PASSION": "Passionné par l'ingénierie, l'innovation et l'Industrie 4.0",
-    "SKILL_PROJECT_MGMT": "Gestion de projets",
     "SKILL_FULLSTACK": "Développement d'applications web full stack",
     "SKILL_MAINTENANCE": "Maintenance & Dépannage de trains",
-    "SKILL_NETWORK": "Développement d'outils réseaux pour trains"
-  },
-  "PROJECTS": {
-    "TITLE": "Mes Projets",
-    "INTRO": "Découvrez ici quelques réalisations concrètes menées en entreprise ou à l'école, illustrant mon parcours d'ingénieur et ma passion pour l'innovation technique.",
-    "CONTEXT": "Contexte",
-    "PROBLEM": "Problématique",
-    "SOLUTION": "Solution",
-    "GAINS": "Gains",
-    "MORE_INFO": "Plus d'informations",
-    "STATUS_PROD": "En production",
-    "STATUS_DELIVERY": "En cours de livraison",
-    "STATUS_STUDY": "En cours d'études",
-    "GAINS_NOT_MEASURABLE": "Pas encore mesurable",
-    "PROJECT1": {
-      "TITLE": "Banc de configuration d'équipements réseaux S.DOT",
-      "VERSION": "v0",
-      "CONTEXT": "Projet de fin de BTS Maintenance des Systèmes au Technicentre Industriel de Bischheim",
-      "PROBLEM": "De nouveaux équipements réseaux sont installés dans les engins TER durant leurs opérations de rénovation de mi-vie (Opération OPTER), cependant la configuration est compliquée dû à la dispersion de ces derniers dans l'engin dans des endroits peu accessibles",
-      "SOLUTION": "Création d'un banc sous forme de baie informatique pouvant accueillir tous les équipements réseaux d'une rame afin de réaliser la configuration en 1 seule opération en temps masqué",
-      "GAINS": "Réduction du temps de réalisation de la tâche de 2 agents pendant 2 vacations avec immobilisation de l'engin à 1 agent pendant 1 vacation en temps masqué",
-      "IMG_CAPTION": "Photo du banc prototype au Technicentre Industriel de Bischheim"
-    },
-    "PROJECT2": {
-      "TITLE": "Application « Livret de Dépannage Intéractif »",
-      "VERSION": "v2",
-      "CONTEXT": "Retour d'expérience en Centre de Maintenance",
-      "PROBLEM": "La documentation de maintenance des engins entretenus dans les centres de maintenance SNCF est dispersée dans une multitudes de références documentaires et il n'existe pas d'outil organisant et tenant à jour les documents de maintenance",
-      "SOLUTION": "Création d'une application web et mobile de recherche documentaire comportant une base de données liant les spécificités des engins aux schémas correspondants",
-      "GAINS": "Réduction de 75% du temps de recherche d'un document pour les jeunes formés",
-      "IMG_CAPTION": "Capture d'écran de la page d'Accueil"
-    },
-    "PROJECT3": {
-      "TITLE": "Banc de configuration d'équipements réseaux S.DOT",
-      "VERSION": "Final",
-      "CONTEXT": "Poursuite et amélioration du projet de BTS durant mes études en école d'ingénieur",
-      "PROBLEM": "De nouveaux équipements réseaux sont installés dans les engins TER durant leurs opérations de rénovation de mi-vie (Opération OPTER), cependant ces équipements réseaux sont dispersés dans le train dans des endroits peu accessibles et les tâches de configuration sont très chronophages",
-      "SOLUTION": "Création d'un banc sous forme de baie informatique pouvant accueillir tous les équipements réseaux d'une rame afin de réaliser la configuration de manière automatique et centralisée sur un ensemble d'équipements réseaux en temps masqué",
-      "IMG_CAPTION": "Modélisation 3D de la baie du banc de configuration"
-    }
+    "SKILL_NETWORK": "Développement d'outils réseaux pour trains",
+    "SKILL_PROJECT_MGMT": "Gestion de projets",
+    "SPECIALTY": "Étudiant ingénieur spécialisé",
+    "SPECIALTY_FIELD": "Systèmes Numériques pour l'Industrie"
   },
   "JOURNEY": {
-    "TITLE": "Mon Parcours",
-    "STEP1": {
-      "BADGE": "2019 - 2022",
-      "TITLE": "Bac Pro MEI",
-      "DESC": "Alternance à la SNCF (Technicentre Industriel de Bischheim)<br>Lycée Charles de Foucauld, Schiltigheim",
-      "KEYWORD": "\"Expertise terrain\""
+    "COMMON": {
+      "ACHIEVEMENTS": "Réalisations clés",
+      "DESCRIPTION": "Description",
+      "NEXT": "Suivant",
+      "PRESENT": "Présent",
+      "PREVIOUS": "Précédent",
+      "SKILLS": "Compétences acquises",
+      "TYPE_EDUCATION": "Formation",
+      "TYPE_WORK": "Expérience professionnelle"
     },
-    "STEP2": {
-      "BADGE": "2022 - 2024",
-      "TITLE": "BTS MS",
-      "DESC": "Alternance SNCF (Bischheim, Equipe d'Essais Dépannages)<br>Lycée Jacquard, Paris 19e",
-      "KEYWORD": "\"Maintenance & Innovation\""
+    "LOCATIONS": {
+      "CHATILLON": "Châtillon, France",
+      "LILLE": "Lille, France",
+      "PARIS": "Paris, France",
+      "SAINT_DENIS": "Saint-Denis, France"
     },
-    "STEP3": {
-      "BADGE": "2024 - Maintenant",
-      "TITLE": "ICAM SNI",
-      "DESC": "Alternance SNCF Ingénierie du Matériel (Cluster Centre, Plateau OPTER AGC)<br>ICAM Strasbourg Europe",
-      "KEYWORD": "\"Numérique & Industrie\""
-    }
-  },
-  "CONTACT": {
-    "TITLE": "Formulaire de contact",
-    "SEND": "Envoyer"
-  },
-  "ERRORS": {
-    "404_TITLE": "Erreur 404 🤖",
-    "404_DESC": "La ressource demandée n'a pas été trouvée...",
-    "404_REDIRECT": "Vous allez être redirigé dans quelques instants",
-    "DEV_TITLE": "Aïe 🚧 🏗️",
-    "DEV_DESC": "Cette page est actuellement en cours de développement..."
+    "ORGANIZATIONS": {
+      "ICAM": "ICAM - Institut Catholique des Arts et Métiers",
+      "JACQUARD": "Lycée Jacquard",
+      "SNCF_ING": "SNCF Voyageurs - Ingénierie",
+      "SNCF_TC": "SNCF Voyageurs - Technicentre"
+    },
+    "STEPS": {
+      "STEP1": {
+        "ACHIEVEMENTS": [
+          "Formation aux procédures de sécurité",
+          "Habilitations ferroviaires"
+        ],
+        "DESCRIPTION": "Maintenance préventive et corrective des essieux de rames TGV. Contrôle qualité et respect des procédures de sécurité ferroviaire.",
+        "SKILLS": [
+          "Maintenance industrielle",
+          "Contrôle qualité",
+          "Sécurité ferroviaire"
+        ],
+        "TEXT": "Opérateur Essieux TGV",
+        "TITLE": "Opérateur Essieux TGV"
+      },
+      "STEP2": {
+        "ACHIEVEMENTS": [
+          "Certification systèmes embarqués",
+          "Autonomie sur interventions critiques"
+        ],
+        "DESCRIPTION": "Diagnostic et dépannage des systèmes embarqués TGV. Réalisation des essais fonctionnels avant mise en service.",
+        "SKILLS": [
+          "Diagnostic électronique",
+          "Dépannage",
+          "Essais fonctionnels"
+        ],
+        "TEXT": "Opérateur Essais-Dépannages TGV",
+        "TITLE": "Opérateur Essais-Dépannages TGV"
+      },
+      "STEP3": {
+        "ACHIEVEMENTS": [
+          "Diplôme obtenu avec mention Très Bien"
+        ],
+        "DESCRIPTION": "Formation en Maintenance des Équipements Industriels. Acquisition des compétences en mécanique, électricité et automatisme.",
+        "SKILLS": [
+          "Mécanique",
+          "Électricité",
+          "Automatisme",
+          "Pneumatique"
+        ],
+        "TEXT": "Diplôme Bac Pro MEI",
+        "TITLE": "Baccalauréat Professionnel MEI"
+      },
+      "STEP4": {
+        "ACHIEVEMENTS": [
+          "Référent technique",
+          "Formateur interne"
+        ],
+        "DESCRIPTION": "Responsable technique des essais et dépannages complexes. Encadrement technique des opérateurs. Rédaction de procédures.",
+        "SKILLS": [
+          "Management technique",
+          "Rédaction procédures",
+          "Formation",
+          "Expertise TGV"
+        ],
+        "TEXT": "Technicien Essais-Dépannages TGV",
+        "TITLE": "Technicien Essais-Dépannages TGV"
+      },
+      "STEP5": {
+        "ACHIEVEMENTS": [
+          "Diplôme obtenu",
+          "Projet de fin d'études sur optimisation maintenance"
+        ],
+        "DESCRIPTION": "Formation supérieure en maintenance des systèmes de production. Spécialisation en systèmes ferroviaires.",
+        "SKILLS": [
+          "Maintenance prédictive",
+          "Gestion de maintenance",
+          "GMAO",
+          "Analyse vibratoire"
+        ],
+        "TEXT": "Diplôme BTS MS",
+        "TITLE": "BTS Maintenance des Systèmes"
+      },
+      "STEP6": {
+        "ACHIEVEMENTS": [
+          "Déploiement de nouvelles fonctionnalités",
+          "Certification système"
+        ],
+        "DESCRIPTION": "Ingénieur système pour le projet OpTER AGC. Conception et validation des évolutions système. Interface avec les équipes de développement.",
+        "SKILLS": [
+          "Ingénierie système",
+          "Gestion de projet",
+          "Validation",
+          "Spécifications techniques"
+        ],
+        "TEXT": "Ingénieur Systémier OpTER AGC",
+        "TITLE": "Ingénieur Systémier OpTER AGC"
+      },
+      "STEP7": {
+        "ACHIEVEMENTS": [
+          "En cours d'obtention",
+          "Projets industriels réalisés"
+        ],
+        "DESCRIPTION": "Formation d'ingénieur par alternance. Spécialisation en systèmes numériques et innovation. Projets industriels concrets.",
+        "SKILLS": [
+          "Développement logiciel",
+          "IoT",
+          "Intelligence artificielle",
+          "Gestion de projet"
+        ],
+        "TEXT": "Diplôme d'ingénieur ICAM SNI",
+        "TITLE": "Diplôme d'Ingénieur ICAM - Spécialité Numérique & Innovation"
+      }
+    },
+    "TITLE": "Mon Parcours"
   },
   "LANG": {
-    "FR": "FR",
-    "EN": "EN"
+    "EN": "EN",
+    "FR": "FR"
+  },
+  "NAV": {
+    "CONTACT": "Contact",
+    "HOME": "Accueil",
+    "JOURNEY": "Parcours",
+    "PASSIONS": "Passions",
+    "PROJECTS": "Projets"
+  },
+  "PROJECTS": {
+    "CONTEXT": "Contexte",
+    "GAINS": "Gains",
+    "GAINS_NOT_MEASURABLE": "Pas encore mesurable",
+    "INTRO": "Découvrez ici quelques réalisations concrètes menées en entreprise ou à l'école, illustrant mon parcours d'ingénieur et ma passion pour l'innovation technique.",
+    "MORE_INFO": "Plus d'informations",
+    "PROBLEM": "Problématique",
+    "PROJECT1": {
+      "CONTEXT": "Projet de fin de BTS Maintenance des Systèmes au Technicentre Industriel de Bischheim",
+      "GAINS": "Réduction du temps de réalisation de la tâche de 2 agents pendant 2 vacations avec immobilisation de l'engin à 1 agent pendant 1 vacation en temps masqué",
+      "IMG_CAPTION": "Photo du banc prototype au Technicentre Industriel de Bischheim",
+      "PROBLEM": "De nouveaux équipements réseaux sont installés dans les engins TER durant leurs opérations de rénovation de mi-vie (Opération OPTER), cependant la configuration est compliquée dû à la dispersion de ces derniers dans l'engin dans des endroits peu accessibles",
+      "SOLUTION": "Création d'un banc sous forme de baie informatique pouvant accueillir tous les équipements réseaux d'une rame afin de réaliser la configuration en 1 seule opération en temps masqué",
+      "TITLE": "Banc de configuration d'équipements réseaux S.DOT",
+      "VERSION": "v0"
+    },
+    "PROJECT2": {
+      "CONTEXT": "Retour d'expérience en Centre de Maintenance",
+      "GAINS": "Réduction de 75% du temps de recherche d'un document pour les jeunes formés",
+      "IMG_CAPTION": "Capture d'écran de la page d'Accueil",
+      "PROBLEM": "La documentation de maintenance des engins entretenus dans les centres de maintenance SNCF est dispersée dans une multitudes de références documentaires et il n'existe pas d'outil organisant et tenant à jour les documents de maintenance",
+      "SOLUTION": "Création d'une application web et mobile de recherche documentaire comportant une base de données liant les spécificités des engins aux schémas correspondants",
+      "TITLE": "Application « Livret de Dépannage Intéractif »",
+      "VERSION": "v2"
+    },
+    "PROJECT3": {
+      "CONTEXT": "Poursuite et amélioration du projet de BTS durant mes études en école d'ingénieur",
+      "IMG_CAPTION": "Modélisation 3D de la baie du banc de configuration",
+      "PROBLEM": "De nouveaux équipements réseaux sont installés dans les engins TER durant leurs opérations de rénovation de mi-vie (Opération OPTER), cependant ces équipements réseaux sont dispersés dans le train dans des endroits peu accessibles et les tâches de configuration sont très chronophages",
+      "SOLUTION": "Création d'un banc sous forme de baie informatique pouvant accueillir tous les équipements réseaux d'une rame afin de réaliser la configuration de manière automatique et centralisée sur un ensemble d'équipements réseaux en temps masqué",
+      "TITLE": "Banc de configuration d'équipements réseaux S.DOT",
+      "VERSION": "Final"
+    },
+    "SOLUTION": "Solution",
+    "STATUS_DELIVERY": "En cours de livraison",
+    "STATUS_PROD": "En production",
+    "STATUS_STUDY": "En cours d'études",
+    "TITLE": "Mes Projets"
   }
 }
