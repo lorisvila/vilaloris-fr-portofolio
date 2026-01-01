@@ -8,7 +8,6 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ListElementComponent } from './pages/home-page/list-element/list-element.component';
 import { ProjetsPageComponent } from './pages/projets-page/projets-page.component';
-import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import {ReactiveFormsModule} from "@angular/forms";
 import {FormlyModule} from "@ngx-formly/core";
 import {WcsFormlyModule} from "wcs-formly";
@@ -21,6 +20,7 @@ import { ErrorDevComponent } from './pages/errors/error-dev/error-dev.component'
 import { HttpClientModule } from '@angular/common/http';
 import {TranslateModule, TranslatePipe} from '@ngx-translate/core';
 import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CustomHorizontalStepperComponent } from './shared/custom-horizontal-stepper/custom-horizontal-stepper.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,6 @@ import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
     HomePageComponent,
     ListElementComponent,
     ProjetsPageComponent,
-    ContactPageComponent,
     ParcoursPageComponent,
     Error404Component,
     PassionsPageComponent,
@@ -53,6 +52,7 @@ import { provideTranslateHttpLoader } from '@ngx-translate/http-loader';
     WcsFormlyModule,
     TranslateModule.forRoot(),
     TranslatePipe,
+    CustomHorizontalStepperComponent,
   ],
   providers: [
     // Provide configuration for TranslateHttpLoader (v17+)

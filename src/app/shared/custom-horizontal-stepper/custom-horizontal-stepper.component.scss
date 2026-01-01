@@ -1,0 +1,194 @@
+:host {
+  --stepper-primary-color: #0088ce;
+  --stepper-inactive-color: #b0b0b0;
+  --stepper-disabled-color: #e0e0e0;
+  --stepper-text-color: #333;
+  --stepper-button-size: 2.5rem;
+  --stepper-connector-height: 3px;
+
+  display: block;
+  width: 100%;
+}
+
+.stepper-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 5rem; // Space for absolute positioned labels
+}
+
+// Steps row - circles and connectors
+.steps-row {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.step-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  background: none !important;
+  background-color: transparent !important;
+  background-blend-mode: normal !important;
+
+  &.active,
+  &.passed,
+  &.passed.active {
+    background: none !important;
+    background-color: transparent !important;
+    background-blend-mode: normal !important;
+  }
+
+  &.first {
+    align-items: flex-start;
+
+    .label-container {
+      text-align: left;
+      transform: none;
+      left: 0;
+    }
+  }
+
+  &.last {
+    align-items: flex-end;
+
+    .label-container {
+      text-align: right;
+      transform: none;
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.step-button {
+  width: var(--stepper-button-size);
+  height: var(--stepper-button-size);
+  border-radius: 50%;
+  border: 2px solid var(--stepper-inactive-color);
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  padding: 0;
+  flex-shrink: 0;
+
+  &:hover:not(:disabled) {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .passed & {
+    border-color: var(--stepper-primary-color);
+    background: var(--stepper-primary-color);
+    color: white;
+  }
+
+  .active & {
+    border-color: var(--stepper-primary-color);
+    background: var(--stepper-primary-color);
+    color: white;
+    box-shadow: 0 0 0 4px rgba(0, 136, 206, 0.25);
+  }
+}
+
+.step-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-number {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.step-icon {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.3rem;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
+
+.check-icon {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+// Connector with dashed support
+.connector {
+  flex: 1;
+  height: var(--stepper-connector-height);
+  background: var(--stepper-primary-color);
+  min-width: 20px;
+  transition: background 0.3s ease;
+  align-self: calc(var(--stepper-button-size) / 2);
+  margin-top: calc(var(--stepper-button-size) / 2 - var(--stepper-connector-height) / 2);
+
+  &.filled {
+    background: var(--stepper-primary-color);
+  }
+
+  &.dashed {
+    background: transparent;
+    border-top: var(--stepper-connector-height) dashed var(--stepper-inactive-color);
+  }
+}
+
+// Label styling
+.label-container {
+  position: absolute;
+  top: calc(var(--stepper-button-size) + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: max-content;
+  max-width: 120px;
+  background: none !important;
+  background-color: transparent !important;
+}
+
+.label-text {
+  display: block;
+  color: var(--stepper-text-color);
+  line-height: 1.4;
+  word-wrap: break-word;
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0;
+  margin: 0;
+
+  &.active {
+    font-weight: 600;
+    color: var(--stepper-primary-color);
+    background: none !important;
+    background-color: transparent !important;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}

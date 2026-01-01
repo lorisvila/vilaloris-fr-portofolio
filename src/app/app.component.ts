@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, ElementRef, Renderer2, ViewChild} from '@angular/core';
 import {MainService} from "./services/main.service";
 import {TranslateService} from "@ngx-translate/core";
 
@@ -8,11 +8,14 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+
   isEnglish = true;
+  email: string = "loris.vila@outlook.fr";
 
   constructor(
     public mainService: MainService,
     public translate: TranslateService,
+    private renderer: Renderer2
   ) {
     translate.addLangs(['en', 'fr']);
     translate.setDefaultLang('en');
